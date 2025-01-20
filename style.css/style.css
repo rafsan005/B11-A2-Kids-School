@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .navbar .logo span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links .home {
+    color: orange;
+  }
+  
+  .nav-links .about {
+    color: #00bfff; /* Light Blue */
+  }
+  
+  .nav-links .facilities {
+    color: #8a2be2; /* Purple */
+  }
+  
+  .nav-links .admission {
+    color: #ff69b4; /* Pink */
+  }
+  
+  .contact-btn {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Banner Section */
+  .banner {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    justify-content: space-between;
+  }
+  
+  .banner-content {
+    max-width: 50%;
+  }
+  
+  .banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-content .highlight-orange {
+    color: orange;
+  }
+  
+  .banner-content .highlight-blue {
+    color: blue;
+  }
+  
+  .banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .enroll-btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .banner-image img {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .contact-btn {
+      display: none;
+    }
+  
+    .banner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .banner-image {
+      order: -1;
+      margin-bottom: 20px;
+    }
+  
+    .banner-content {
+      max-width: 100%;
+    }
+  
+    .banner-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
