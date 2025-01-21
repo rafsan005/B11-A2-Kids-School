@@ -463,13 +463,12 @@ body {
 
 @media (max-width: 768px) {
     .stories-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         height: auto;
     }
 
     .large-card {
-        grid-column: span 1;
-        height: auto;
+        display: none;
     }
 
     .small-cards {
@@ -479,7 +478,10 @@ body {
 
 @media (max-width: 480px) {
     .small-cards {
-        grid-template-columns: 1fr;
+        border-radius: 9.53px;
+
+background: rgb(255, 255, 255);
+        grid-template-columns:repeat(2fr);
     }
 }
 /*footer*/
